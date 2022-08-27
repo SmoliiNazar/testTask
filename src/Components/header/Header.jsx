@@ -1,8 +1,8 @@
 import React from 'react';
 
-import sfLogo from './sf.png';
-import spaceHelmet from './space-helmetf2.png';
-import arrow from './arrow.png';
+import sfLogo from './images/sf.png';
+import spaceHelmet from './images/space-helmetf2.png';
+import arrow from './images/arrow.png';
 
 import './header.scss';
 

@@ -33,21 +33,8 @@ const Contact = () => {
 
                 <label for="messages" className="form__label">Write Us Messages</label>
                 <textarea type="input" className="form__field" placeholder="Your Message" name="messages" id='messages' required />
-                
-                {/* <label htmlFor="username">Full Name</label>
-                <input className='contact-forms' type="text" id='username' />
-
-                <label htmlFor="company">Company Name</label>
-                <input className='contact-forms' type="text" id='company' />
-
-                <label htmlFor="phoneNum">Phone number</label>
-                <input className='contact-forms' type="number" id='phoneNum' />
-
-                <label htmlFor="mail">E-mail</label>
-                <input className='contact-forms' type="email" id='mail' />
-
-                <label htmlFor="message">Write Us Messages</label>
-                <textarea className='contact-forms' type='text' id='message' /> */}
+            
+                <input className='form__btn' type="submit" value='Send Message' />
             </form>
           </div>
         </section>

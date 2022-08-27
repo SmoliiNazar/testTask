@@ -1,0 +1,93 @@
+header {
+    height: 100%;
+    
+    background: #FFBC00;
+    nav {
+        ul {
+            display: grid;
+            gap: 50px;
+            grid-template-columns: 1fr repeat(4, 150px);
+            column-gap: 15px;
+            img {
+                padding-top: 52px;
+            }
+            li {
+                padding-top: 62px;
+                font-family: 'Ubuntu';
+    
+                list-style: none;
+                text-shadow: 0 3px 3px rgba(0, 0, 0, .5);;
+    
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    transition: all 0.3s;
+                    &:hover {
+                        color: white
+                    }
+                }
+            }
+        }
+    }
+    .header-btn {
+            margin-top: 48px;
+                width: 118px;
+                height: 50px;
+
+                background: #FFFFFF;
+                border-radius: 12px;
+                border: none;
+                box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+                
+                font-family: 'Ubuntu';
+                font-weight: 500;
+                font-size: 18px;
+                
+                cursor: pointer;
+                transition: all 0.3s;
+                &:hover {
+                    width: 140px;
+                    height: 60px;
+
+                    background-color: #e4e4e4;
+                    color: rgba(0, 0, 0, .5);
+                    border: none;
+                }
+    }
+    .header-content {
+        display: flex;
+        .header-wrapper {
+            padding-bottom: 55px;
+            padding-top: 184px;
+            button {
+                margin-left: 90px;
+                width: 176px;
+                height: 65px
+            }
+        }
+        
+        &_descr {
+            padding-top: 33px;
+            padding-left: 90px;
+
+            font-family: 'Ubuntu';
+
+            font-weight: 400;
+            font-size: 18px;
+
+            line-height: 160%;
+
+            text-shadow: 0 3px 3px rgba(0, 0, 0, .3);;
+        }
+        &_img {
+            padding-top: 155px;
+            position: absolute;
+            width: 600px;
+            height: 400px;
+            right: 0;
+        } 
+    }
+}

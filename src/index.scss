@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    h1 {
+        font-family: 'Anton';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 68px;
+        line-height: 130%;
+
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}

@@ -1,6 +1,8 @@
+$gray: #9b9b9b;
+$error: #EF2828;
+
 .contact {
     .contact-wrapper {
-        position: relative;
         display: flex;
         justify-content: space-between;
         &_title {
@@ -14,12 +16,12 @@
 
             color: #FFBC00;
             span {
+                font-family: 'Anton';
                 color: rgb(0, 0, 0);
             }
         }
         &_scrollUp {
-            padding-top: 60px;
-            position: sticky;
+            margin-top: 60px;
         }
     }
     .contact-us {
@@ -28,58 +30,67 @@
         flex-direction: column;
         margin-top: 31px;
         width: 900px;
-        height: 550px;
+        min-height: 550px;
         margin-bottom: 53px;
 
         background: #FFFFFF;
         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
         border-radius: 30px;
-        label {
-            margin-top: 30px;
-            font-family: 'Ubuntu';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 14px;
-
-            color: #999999;
-        }
-        .contact-forms {
-            margin-top: 30px;
-            width: 50%;
-            border: none;
-            border-bottom: 2px solid black;
-        }
     }
 }
 
 
-$gray: #9b9b9b;
+
+
 .form__group {
-  padding: 15px 0 0;
-  margin-top: 10px;
-  width: 50%;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
 }
 
 .form__field {
-  font-family: 'Ubuntu';
-  width: 50%;
-  border: 0;
-  border-bottom: 2px solid $gray;
-  outline: 0;
-  font-size: 1.3rem;
-  color: black;
-  padding: 7px 0;
-  transition: border-color 0.2s;
+    font-family: 'Ubuntu';
+    width: 50%;
+    border: 0;
+    border-bottom: 2px solid $gray;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    transition: border-color 0.2s;
+    &-error {
+        font-family: 'Ubuntu';
+        width: 50%;
+        border: 0;
+        border-bottom: 2px solid $error;
+        outline: 0;
+        font-size: 1.3rem;
+        color: black;
+        padding: 7px 0;
+        transition: border-color 0.2s;
+    }
 }
 
 .form__label {
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 1rem;
-  color: $gray;
+    margin-top: 30px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: $gray;
+    &-error {
+        margin-top: 30px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: $error;
+    }
 }
+
 .form__btn {
     margin-top: 30px;
     width: 170px;
@@ -92,9 +103,25 @@ $gray: #9b9b9b;
     line-height: 18px;
     text-align: center;
 
-color: #000000;
+    color: #000000;
 
     background: #FFBC00;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 16px;
+
+    cursor: pointer;
+
+    transition: all .3s;
+    &:hover {
+        color:rgb(144, 144, 144);
+        background: #ffc936;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.formik__error {
+    margin: 10px 0 0 0;
+    
+    font-size: 16px;
+    color: $error
 }

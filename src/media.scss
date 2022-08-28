@@ -1,0 +1,105 @@
+@media (max-width: 376px) {
+    
+    // Header component
+    header {
+        min-height: 100%;
+        nav {
+            display: none;
+        }
+        
+        h1 {
+            font-size: 42px;
+        }
+
+        .mobile-img {
+            display: block;
+            padding-left: 55px;
+            padding-bottom: 50px;
+        }
+        
+        .header-content_descr {
+            padding: 25px 0;
+            text-shadow: none;
+        }
+        
+        .header-content .header-wrapper {
+            padding: 70px 30px 27px;
+        }
+        
+        .header-content {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header-logo {
+            padding: 45px 0px 0px 28px;
+            display: block;
+        }
+
+        .header-img {
+            display: none;
+        }
+
+        .scroll-arrow {
+            display: none;
+        }
+        
+        .mobile-wrapper {
+            display:  block;
+            .hamburger {
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                height: 21px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                cursor: pointer;
+                span {
+                    width: 30px;
+                    height: 3px;
+                    border-radius: 1px;
+                    background: black;
+                }
+                .up {
+                    width: 17.73px;
+                    height: 3px;
+                    margin-right: 12px;
+                }
+                .down {
+                    width: 17.73px;
+                    height: 3px;
+                    margin-left: 12px;
+                }
+                .long {
+                    border-radius: 100px;
+                }
+            }
+        }
+
+        #HBTN {
+            margin: 30px 0;
+        }
+    }
+
+    // Contact component
+    .contact{
+        .contact-us {
+            padding: 0 0 0 24px;
+            width: 100%;
+        }
+        .form__field {
+            width: 320px;
+        }
+        .form__field-error {
+            width: 320px;
+        }
+        .form__btn {
+            margin: 71px 87px 30px 86px;
+        }
+        textarea {
+            border-bottom: none;
+        }
+    }
+}

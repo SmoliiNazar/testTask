@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 import sfLogo from './images/sf.png';
 import spaceHelmet from './images/space-helmetf2.png';
@@ -8,25 +9,36 @@ import './header.scss';
 
 const Header = () => {
     return (
-        <header className='Header'>
+        <header id='HEAD' className='Header'>
             <div className="container">
+                
+                <div className="mobile-wrapper">
+                    <img src={sfLogo} alt="company-logo" className='header-logo' />
+                    <div className="hamburger">
+                        <span className='up'></span>
+                        <span className="long"></span>
+                        <span className='down'></span>
+                    </div>
+                </div>
+                
                 <nav>
                     <ul>
-                        <img src={sfLogo} alt="company-logo" className='header-logo' />
+                        <img src={sfLogo} alt="company-logo"/>
                         
                         <li>
-                            <a href="#">Home</a>
+                            <Link to={'#'} smooth={true} duration={500} spy={true}>Home</Link>
                         </li>
                         
                         <li>
-                            <a href="#">About Us</a>
+                            <Link to={'#'} smooth={true} duration={500} spy={true}>About Us</Link>
                         </li>
                         
                         <li>
-                            <a href="#">What We Do</a>
+                            <Link to={'#'} smooth={true} duration={500} spy={true}>What We Do</Link>
                         </li>
-
-                        <button className='header-btn'>Contact Us</button>
+                        <Link to={'CUS'} smooth={true} duration={500} offset={80} spy={true}>
+                            <button className='header-btn'>Contact Us</button>
+                        </Link>
                     </ul>
                 </nav>
                 <div className="header-content">
@@ -38,18 +50,22 @@ const Header = () => {
                         <p className='header-content_descr'>
                             We are specialist in protecting your assets and reputation to make <br /> sure you operate risk-free and focus on your core business.
                         </p>
-                        <button className='header-btn'>Learn More</button>
+                        <Link to={'CUS'} smooth={true} duration={500} offset={80} spy={true}>
+                            <button id='HBTN' className='header-btn'>Learn More</button>
+                        </Link>
                         <div className="scroll-arrow header-content_descr">
-                            <a href="#" className='header-content_scroll'>
+                            <Link to={'CUS'} smooth={true} duration={500} offset={80} spy={true} className='header-content_scroll'>
                                 <img src={arrow} alt="" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="header-img">
                         <img src={spaceHelmet} alt="Astronaut-helm" className='header-content_img'/>
                     </div>
+                    <img src={spaceHelmet} alt="mobile-helmet" className='mobile-img'/>
                 </div>
             </div>
+                
         </header>
     );
 };

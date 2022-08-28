@@ -25,12 +25,17 @@ header {
                     text-decoration: none;
                     color: black;
                     transition: all 0.3s;
+                    cursor: pointer;
                     &:hover {
-                        color: white
+                        color: white;
+                        text-shadow: 3px 9px 9px rgba(0, 0, 0, .5);
                     }
                 }
             }
         }
+    }
+    .header-logo {
+        display: none;
     }
     .header-btn {
             margin-top: 48px;
@@ -62,7 +67,7 @@ header {
         .header-wrapper {
             padding-bottom: 55px;
             padding-top: 184px;
-            button {
+            .header-btn {
                 margin-left: 90px;
                 width: 176px;
                 height: 65px
@@ -92,5 +97,16 @@ header {
         .scroll-arrow {
             padding-top: 65px;
         }
+        &_scroll {
+            cursor: pointer;
+        }
     }
+}
+
+.mobile-wrapper {
+    display: none;
+}
+
+.mobile-img {
+    display: none;
 }

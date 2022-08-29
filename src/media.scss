@@ -204,7 +204,7 @@
         }
        .contact-us {
            margin: 15px auto;
-           width: 90%;
+           width: 70%;
        }
        .form__field {
            width: 80%;
@@ -313,23 +313,22 @@
 
     // Contact component
     .contact{
+        width: 100%;
         .contact-wrapper_title {
             margin: 0 auto;
         }
         .contact-us {
             margin: 15px auto;
-            width: 90%;
+            width: 60%;
         }
         .form__label {
             margin-left: 20px;
         }
         .form__field {
-            margin-left: 20px;
-            width: 80%;
+            width: 100%;
         }
         .form__field-error {
-            margin-left: 20px;
-            width: 80%;
+            width: 100%;
         }
         .form__btn {
             margin: 71px 87px 30px 86px;
@@ -337,6 +336,10 @@
 
         .fixedArrow {
             display: none;
+        }
+
+        .formik__error {
+            font-size: 12px;
         }
 
         textarea {

@@ -86,13 +86,12 @@
 
    // Contact component
    .contact{
-    padding-left: 1fr;
         .contact-wrapper_title {
             margin: 0 auto;
         }
        .contact-us {
-           padding: 0 0 0 24px;
-           width: 700px;
+            margin: 15px auto;
+            width: 80%;
        }
        .form__field {
            width: 99%;
@@ -204,7 +203,7 @@
             margin: 0 auto;
         }
        .contact-us {
-           padding: 0 0 0 24px;
+           margin: 15px auto;
            width: 90%;
        }
        .form__field {
@@ -318,7 +317,7 @@
             margin: 0 auto;
         }
         .contact-us {
-            padding: 0 0 0 24px;
+            margin: 15px auto;
             width: 90%;
         }
         .form__label {

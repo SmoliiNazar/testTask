@@ -11,7 +11,7 @@ header {
             img {
                 padding-top: 52px;
             }
-            li {
+            .header-links {
                 padding-top: 62px;
                 font-family: 'Ubuntu';
     
@@ -33,9 +33,6 @@ header {
                 }
             }
         }
-    }
-    .header-logo {
-        display: none;
     }
     .header-btn {
             margin-top: 48px;
@@ -101,6 +98,54 @@ header {
             cursor: pointer;
         }
     }
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    padding-top: 40px;
+    top: 0;
+    left: 0;
+    background: #FFBC00;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        &_logo {
+            padding-left: 31px;
+            width: 162px;
+            height: 35px;
+        }
+        &_close {
+            padding-right: 27px;
+        }
+    }
+    &-list {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+        .header-links {
+            padding: 28px 0 0 31px;
+            padding-top: 28px;
+        }
+
+        span {
+            padding: 60px 0 0 31px;
+            font-family: 'Ubuntu';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 160%;
+            /* or 29px */
+
+
+            color: #000000;
+
+            opacity: 0.5;
+        }
+    }
+}
+
+.active {
+    display: block;
 }
 
 .mobile-wrapper {
